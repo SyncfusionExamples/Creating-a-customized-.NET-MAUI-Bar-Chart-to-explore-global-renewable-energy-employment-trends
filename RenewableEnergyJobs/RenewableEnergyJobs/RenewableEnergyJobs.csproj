@@ -47,14 +47,11 @@
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\clip.png">
-		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-		</MauiImage>
-		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
-		<MauiImage Update="Resources\Images\greenbulb.jfif">
+		<MauiImage Update="Resources\Images\background.jpg">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</MauiImage>
-		<MauiImage Update="Resources\Images\logo.jpg">
+		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
+		<MauiImage Update="Resources\Images\icon.png">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</MauiImage>
 
@@ -66,28 +63,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiImage Remove="Resources\Images\biogas.png" />
-	  <MauiImage Remove="Resources\Images\biomass.png" />
-	  <MauiImage Remove="Resources\Images\csp.png" />
-	  <MauiImage Remove="Resources\Images\fuel.png" />
-	  <MauiImage Remove="Resources\Images\geothermal.png" />
-	  <MauiImage Remove="Resources\Images\heat.png" />
-	  <MauiImage Remove="Resources\Images\hydro.png" />
-	  <MauiImage Remove="Resources\Images\others.png" />
-	  <MauiImage Remove="Resources\Images\photo.png" />
-	  <MauiImage Remove="Resources\Images\pump.png" />
-	  <MauiImage Remove="Resources\Images\pumps.png" />
-	  <MauiImage Remove="Resources\Images\volcano.png" />
-	  <MauiImage Remove="Resources\Images\waste.png" />
-	  <MauiImage Remove="Resources\Images\wave.png" />
-	  <MauiImage Remove="Resources\Images\wind.png" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
-		<PackageReference Include="Syncfusion.Maui.Charts" Version="25.1.37" />
+		<PackageReference Include="Syncfusion.Maui.Charts" Version="*" />
 	</ItemGroup>
 
 </Project>
