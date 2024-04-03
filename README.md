@@ -398,3 +398,7 @@ After executing the previous code examples, the output will resemble the followi
 
  You can also refer to the [customized Bar Chart to explore global renewable energy employment trends blog]()
 
+## Troubleshooting:
+
+**Path too long exception:**
+If you encounter a path too long exception when building this example project, close Visual Studio and rename the repository to a shorter name before building the project.
