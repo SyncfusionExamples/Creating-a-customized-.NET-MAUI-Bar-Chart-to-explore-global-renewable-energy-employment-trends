@@ -247,11 +247,11 @@ Incorporating a title into the chart enhances the clarity of the presented data.
 <chart:SfCartesianChart.Title>
     <HorizontalStackLayout >
         <Image Source="clip1.png" Margin="{OnPlatform Default='5,0,5,0', Android='0,0,5,0', iOS='0,0,5,0'}" 
-   HeightRequest="{OnPlatform Android=30, Default=40, iOS= 30}"/>
+   HeightRequest="{OnPlatform Android=30, Default=40, iOS= 40}"/>
         <Label Text="Global Employment in Renewable Energy Technologies, 2022" 
                FontFamily="OpenSansSemibold" Margin="{OnPlatform Default='0,0,0,5', Android='0', iOS='0'}" 
                HorizontalOptions="Center" HorizontalTextAlignment="Center" 
-               VerticalOptions="Center" FontSize="{OnPlatform Default=18, MacCatalyst=24}" TextColor="Black"/>
+               VerticalOptions="Center" FontSize="{OnPlatform Default=18, iOS=22, MacCatalyst=24}" TextColor="Black"/>
     </HorizontalStackLayout>
 </chart:SfCartesianChart.Title>
 ```
@@ -264,14 +264,14 @@ To customize the chart axis, you can refer the following code snippet
 ```
 <chart:SfCartesianChart.XAxes>
 
-    <chart:CategoryAxis EdgeLabelsDrawingMode="Shift"   LabelPlacement="BetweenTicks" ShowMajorGridLines="False">
+    <chart:CategoryAxis EdgeLabelsDrawingMode="Shift" LabelPlacement="BetweenTicks" ShowMajorGridLines="False">
                         
         <chart:CategoryAxis.MajorTickStyle>
             <chart:ChartAxisTickStyle StrokeWidth="0"/>
         </chart:CategoryAxis.MajorTickStyle>
 
         <chart:CategoryAxis.LabelStyle>
-            <chart:ChartAxisLabelStyle Margin="{OnPlatform WinUI='0,4,4,0',Android='0',MacCatalyst='0,4,0,0',iOS='0'}" FontSize="{OnPlatform MacCatalyst=20}" FontFamily="{OnPlatform WinUI=OpenSansSemibold, iOS=OpenSansSemibold, Android=OpenSansSemibold }"
+            <chart:ChartAxisLabelStyle Margin="{OnPlatform WinUI='0,4,4,0',Android='0',MacCatalyst='0,4,0,0',iOS='0, 4, 0, 0'}" FontSize="{OnPlatform MacCatalyst=20, iOS=15}" FontFamily="{OnPlatform WinUI=OpenSansSemibold, iOS=OpenSansSemibold, Android=OpenSansSemibold }"
     TextColor="Black" FontAttributes="Italic"/>
         </chart:CategoryAxis.LabelStyle>
 
@@ -365,7 +365,7 @@ We can make the data easier to read by enabling the chart data labels using the 
         <chart:CartesianDataLabelSettings LabelPlacement="Outer" UseSeriesPalette="False">
 
             <chart:CartesianDataLabelSettings.LabelStyle>
-                <chart:ChartDataLabelStyle FontSize="{OnPlatform MacCatalyst=20, Default=Medium}" FontFamily="{OnPlatform WinUI=OpenSansSemibold, iOS=OpenSansSemibold, Android=OpenSansSemibold }"></chart:ChartDataLabelStyle>
+                <chart:ChartDataLabelStyle FontSize="{OnPlatform MacCatalyst=20, iOS = 18, Default=Medium}" FontFamily="{OnPlatform WinUI=OpenSansSemibold, Android=OpenSansSemibold }"></chart:ChartDataLabelStyle>
             </chart:CartesianDataLabelSettings.LabelStyle>
 
         </chart:CartesianDataLabelSettings>
@@ -386,7 +386,7 @@ Finally, incorporate a [plot area background view](https://help.syncfusion.com/m
         <Image Source="background.jpg"
                AbsoluteLayout.LayoutBounds="1, 1,-1,-1"
                AbsoluteLayout.LayoutFlags="PositionProportional"
-               HeightRequest="{OnPlatform Android=150,iOS=150, MacCatalyst=400, Default=250}"
+               HeightRequest="{OnPlatform Android=150,iOS=200, MacCatalyst=400, Default=250}"
                WidthRequest="{OnPlatform Android=150,iOS=150, MacCatalyst=300, Default=200}"/>
     </AbsoluteLayout>
 </chart:SfCartesianChart.PlotAreaBackgroundView>
