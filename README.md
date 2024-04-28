@@ -396,7 +396,7 @@ After executing the previous code examples, the output will resemble the followi
 
 <img width="947" alt="Global renewable energy employment trends in 2022" src="https://github.com/SyncfusionExamples/Creating-a-customized-.NET-MAUI-Bar-Chart-to-explore-global-renewable-energy-employment-trends/assets/105496706/68e9022c-5579-4987-a40c-2e6fe67fa832">
 
- You can also refer to the [customized Bar Chart to explore global renewable energy employment trends blog]()
+ You can also refer to the [customized Bar Chart to explore global renewable energy employment trends blog](https://www.syncfusion.com/blogs/post/maui-bar-chart-renewable-energy-jobs)
 
 ## Troubleshooting:
 
